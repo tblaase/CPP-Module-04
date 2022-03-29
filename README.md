@@ -2,7 +2,7 @@
 
 My solution for CPP Module 04 of the Common core of 42 school.
 
-![result](https://github.com/tblaase/CPP-Module-03/blob/main/readme_additions/result.png)
+![result](https://github.com/tblaase/CPP-Module-04/blob/main/readme_additions/result.png)
 
 
 The Scope of this Modul was to get to know C++ further and come in contact with inheritance for classes:
