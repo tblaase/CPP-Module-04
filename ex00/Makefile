@@ -6,11 +6,11 @@
 #    By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 17:05:55 by tblaase           #+#    #+#              #
-#    Updated: 2022/03/29 17:06:00 by tblaase          ###   ########.fr        #
+#    Updated: 2022/03/29 17:23:56 by tblaase          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=
+NAME		=	Polymorphism
 
 CC			=	c++
 
@@ -31,7 +31,7 @@ UP			=	\033[A
 CUT			=	\033[K
 
 #source files
-SRC_FILES	=
+SRC_FILES	=	Animal.cpp Cat.cpp Dog.cpp main.cpp
 
 OBJ_FILES	=	$(SRC_FILES:.cpp=.o)
 
