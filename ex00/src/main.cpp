@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 09:47:42 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/30 10:51:26 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/30 11:10:36 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,4 +82,5 @@ int main()
 	std::cout << "\033[34mDeconstructing\033[0m" << std::endl;
 	delete wrong_catto;
 	std::cout << std::endl;
+	return (0);
 }
