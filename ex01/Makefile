@@ -6,11 +6,11 @@
 #    By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 17:06:07 by tblaase           #+#    #+#              #
-#    Updated: 2022/03/29 17:06:11 by tblaase          ###   ########.fr        #
+#    Updated: 2022/03/30 15:22:49 by tblaase          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=
+NAME		=	watch_it_burn
 
 CC			=	c++
 
@@ -31,7 +31,7 @@ UP			=	\033[A
 CUT			=	\033[K
 
 #source files
-SRC_FILES	=
+SRC_FILES	=	Animal.cpp Brain.cpp Cat.cpp Dog.cpp main.cpp WrongAnimal.cpp WrongCat.cpp
 
 OBJ_FILES	=	$(SRC_FILES:.cpp=.o)
 
@@ -43,9 +43,9 @@ OBJ			=	$(addprefix $(OBJ_DIR), $(OBJ_FILES))
 all: $(NAME)
 	@printf "\n"
 	@printf "$(GREEN)            ___ ___          ___    _____    _     _      ___ ___ \n$(RESET)"
-	@printf "$(GREEN) ___ _ _   |   |_  |     ___|  _|  |    _| _| |_ _| |_   |   |_  |\n$(RESET)"
+	@printf "$(GREEN) ___ _ _   |   |_  |     ___|  _|  |    _| _| |_ _| |_   |   | | |\n$(RESET)"
 	@printf "$(GREEN)| -_|_'_|  | | |_| |_   | . |  _|  |   |_ |_   _|_   _|  | | |_  |\n$(RESET)"
-	@printf "$(GREEN)|___|_,_|  |___|_____|  |___|_|    |_____|  |_|   |_|    |___|___|\n$(RESET)"
+	@printf "$(GREEN)|___|_,_|  |___|_____|  |___|_|    |_____|  |_|   |_|    |___| |_|\n$(RESET)"
 	@printf "$(GREEN)                                                                  \n$(RESET)"
 	@printf "\n"
 
