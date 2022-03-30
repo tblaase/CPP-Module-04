@@ -6,11 +6,11 @@
 #    By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 17:06:24 by tblaase           #+#    #+#              #
-#    Updated: 2022/03/30 10:58:35 by tblaase          ###   ########.fr        #
+#    Updated: 2022/03/30 20:11:21 by tblaase          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=
+NAME		=	Interface_Recap
 
 CC			=	c++
 
@@ -31,7 +31,7 @@ UP			=	\033[A
 CUT			=	\033[K
 
 #source files
-SRC_FILES	=
+SRC_FILES	=	AMateria.cpp Character.cpp Cure.cpp Ground.cpp Ice.cpp IMateria.cpp main.cpp MateriaSource.cpp
 
 OBJ_FILES	=	$(SRC_FILES:.cpp=.o)
 
