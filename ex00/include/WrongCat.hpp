@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 18:51:14 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/30 10:04:39 by tblaase          ###   ########.fr       */
+/*   Created: 2022/03/30 10:30:54 by tblaase           #+#    #+#             */
+/*   Updated: 2022/03/30 10:47:24 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,31 +14,30 @@
 #pragma once
 
 // Includes
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
 // classes
 
-class Dog: public Animal
+class WrongCat: public WrongAnimal
 {
 	private:
 		// Private Members
 
 	public:
 	// Constructors
-		Dog();
-		Dog(const Dog &copy);
+		WrongCat();
+		WrongCat(const WrongCat &copy);
 
 	// Deconstructors
-		~Dog();
+		~WrongCat();
 
 	// Overloaded Operators
-		Dog &operator=(const Dog &src);
+		WrongCat &operator=(const WrongCat &src);
 
 	// Public Methods
-		void makeSound(void)const;
+
 	// Getter
 
 	// Setter
 
 };
-

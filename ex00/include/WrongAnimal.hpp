@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 18:51:14 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/30 10:04:39 by tblaase          ###   ########.fr       */
+/*   Created: 2022/03/30 10:30:17 by tblaase           #+#    #+#             */
+/*   Updated: 2022/03/30 10:39:09 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,31 @@
 #pragma once
 
 // Includes
-#include "Animal.hpp"
+#include <string>
+#include <iostream>
 
 // classes
 
-class Dog: public Animal
+class WrongAnimal
 {
-	private:
-		// Private Members
+	protected:
+		std::string _type;
 
 	public:
 	// Constructors
-		Dog();
-		Dog(const Dog &copy);
+		WrongAnimal();
+		WrongAnimal(const WrongAnimal &copy);
 
 	// Deconstructors
-		~Dog();
+		virtual ~WrongAnimal();
 
 	// Overloaded Operators
-		Dog &operator=(const Dog &src);
+		WrongAnimal &operator=(const WrongAnimal &src);
 
 	// Public Methods
-		void makeSound(void)const;
+		virtual void makeSound(void)const;
 	// Getter
-
+		std::string getType(void)const;
 	// Setter
 
 };
