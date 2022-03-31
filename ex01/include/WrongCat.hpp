@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:30:54 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/30 10:47:24 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 15:36:47 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ class WrongCat: public WrongAnimal
 		WrongCat &operator=(const WrongCat &src);
 
 	// Public Methods
-
+		void makeSound(void)const;
 	// Getter
 
 	// Setter

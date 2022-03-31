@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:33:33 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/30 10:37:36 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 15:38:59 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ WrongAnimal &WrongAnimal::operator=(const WrongAnimal &src)
 // Public Methods
 void WrongAnimal::makeSound(void)const
 {
-	std::cout << this->getType() << " says: **Wrong sounds**" << std::endl;
+	std::cout << this->getType() << " says: **WrongAnimal sounds**" << std::endl;
 }
 // Getter
 std::string	WrongAnimal::getType(void)const
