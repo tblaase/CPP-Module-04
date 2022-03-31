@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 18:41:40 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/31 12:19:30 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 13:51:59 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,12 @@ Cat &Cat::operator=(const Cat &src)
 
 	this->_type = src._type;
 	this->_brain = new Brain();
+	if (this->_brain == NULL)
+	{
+		perror("Cat Brain allocation failed");
+		std::cerr << "Exiting the process now." << std::endl;
+		exit(1);
+	}
 	*this->_brain = *src._brain;
 	return *this;
 }
@@ -66,6 +72,5 @@ void	Cat::getIdeas(void)const
 // Setter
 void	Cat::setIdea(size_t i, std::string idea)
 {
-	if (i < 100)
 		this->_brain->setIdea(i, idea);
 }

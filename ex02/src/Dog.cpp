@@ -6,12 +6,11 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:04:51 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/31 12:01:27 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 13:52:23 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "Dog.hpp"
-#include "../include/Dog.hpp"
+#include "Dog.hpp"
 
 // Constructors
 Dog::Dog(): Animal()
@@ -49,6 +48,12 @@ Dog &Dog::operator=(const Dog &src)
 
 	this->_type = src._type;
 	this->_brain = new Brain();
+	if (this->_brain == NULL)
+	{
+		perror("Dog Brain allocation failed");
+		std::cerr << "Exiting the process now." << std::endl;
+		exit(1);
+	}
 	*this->_brain = *src._brain;
 	return *this;
 }
@@ -67,6 +72,5 @@ void	Dog::getIdeas(void)const
 // Setter
 void	Dog::setIdea(size_t i, std::string idea)
 {
-	if (i < 100)
 		this->_brain->setIdea(i, idea);
 }

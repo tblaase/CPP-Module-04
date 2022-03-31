@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:59:07 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/31 12:12:33 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 13:50:04 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ const std::string	Brain::getIdea(size_t i)const
 	if (i < 100)
 		return(this->_ideas[i]);
 	else
-		return ("There is a maximum of 100 Ideas only");
+		return ("\033[33mThere is only 100 ideas per brain.\033[0m");
 }
 
 const std::string *Brain::getIdeaAddress(size_t i)const
@@ -70,4 +70,6 @@ void	Brain::setIdea(size_t i, std::string idea)
 {
 	if (i < 100)
 		this->_ideas[i] = idea;
+	else
+		std::cout << "\033[33mThere is only 100 ideas per brain.\033[0m" << std::endl;
 }

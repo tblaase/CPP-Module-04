@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:04:51 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/31 11:45:12 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 13:50:40 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,12 @@ Dog &Dog::operator=(const Dog &src)
 
 	this->_type = src._type;
 	this->_brain = new Brain();
+	if (this->_brain == NULL)
+	{
+		perror("Dog Brain allocation failed");
+		std::cerr << "Exiting the process now." << std::endl;
+		exit(1);
+	}
 	*this->_brain = *src._brain;
 	return *this;
 }
@@ -66,6 +72,5 @@ void	Dog::getIdeas(void)const
 // Setter
 void	Dog::setIdea(size_t i, std::string idea)
 {
-	if (i < 100)
 		this->_brain->setIdea(i, idea);
 }
