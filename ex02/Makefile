@@ -6,7 +6,7 @@
 #    By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 17:06:07 by tblaase           #+#    #+#              #
-#    Updated: 2022/03/30 15:22:49 by tblaase          ###   ########.fr        #
+#    Updated: 2022/03/31 15:45:26 by tblaase          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,11 +42,11 @@ OBJ			=	$(addprefix $(OBJ_DIR), $(OBJ_FILES))
 #all rule
 all: $(NAME)
 	@printf "\n"
-	@printf "$(GREEN)            ___ ___          ___    _____    _     _      ___ ___ \n$(RESET)"
-	@printf "$(GREEN) ___ _ _   |   |_  |     ___|  _|  |    _| _| |_ _| |_   |   | | |\n$(RESET)"
-	@printf "$(GREEN)| -_|_'_|  | | |_| |_   | . |  _|  |   |_ |_   _|_   _|  | | |_  |\n$(RESET)"
-	@printf "$(GREEN)|___|_,_|  |___|_____|  |___|_|    |_____|  |_|   |_|    |___| |_|\n$(RESET)"
-	@printf "$(GREEN)                                                                  \n$(RESET)"
+	@printf "$(GREEN)            ___ ___        ___    _____    _     _      ___ ___ \n$(RESET)"
+	@printf "$(GREEN) ___ _ _   |   |_  |   ___|  _|  |    _| _| |_ _| |_   |   | | |\n$(RESET)"
+	@printf "$(GREEN)| -_|_'_|  | | |  _|  | . |  _|  |   |_ |_   _|_   _|  | | |_  |\n$(RESET)"
+	@printf "$(GREEN)|___|_,_|  |___|___|  |___|_|    |_____|  |_|   |_|    |___| |_|\n$(RESET)"
+	@printf "$(GREEN)                                                                \n$(RESET)"
 	@printf "\n"
 
 #compile the executable
