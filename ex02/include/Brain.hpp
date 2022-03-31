@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:58:58 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/30 15:57:12 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 12:15:01 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 class Brain
 {
-	protected:
+	private:
 		std::string _ideas[100];
 
 	public:

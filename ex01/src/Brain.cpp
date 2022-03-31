@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:59:07 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/30 16:18:49 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 12:12:33 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,16 +49,25 @@ Brain &Brain::operator=(const Brain &src)
 // Getter
 const std::string	Brain::getIdea(size_t i)const
 {
-	return(this->_ideas[i]);
+	if (i < 100)
+		return(this->_ideas[i]);
+	else
+		return ("There is a maximum of 100 Ideas only");
 }
 
 const std::string *Brain::getIdeaAddress(size_t i)const
 {
-	const std::string	&stringREF = this->_ideas[i];
-	return(&stringREF);
+	if (i < 100)
+	{
+		const std::string	&stringREF = this->_ideas[i];
+		return(&stringREF);
+	}
+	else
+		return (NULL);
 }
 // Setter
 void	Brain::setIdea(size_t i, std::string idea)
 {
-	this->_ideas[i] = idea;
+	if (i < 100)
+		this->_ideas[i] = idea;
 }

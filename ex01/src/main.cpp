@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 09:47:42 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/30 18:20:10 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 11:44:19 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,17 +60,19 @@ int main()
 	for (int i = 0; i < 10; i++)
 		delete(meta[i]);
 
-// ENABLE THIS PART WHEN TESTING FOR DEEP COPY ↓
+//THIS PART IS FOR TESTING DEEP COPY ↓
 
 	std::cout << std::endl << std::endl;
-	std::cout << "#### show that the copy constructor creates a deep copy ####" << std::endl;
+	std::cout << "#### showing that the copy constructor creates a deep copy ####" << std::endl;
 	std::cout << std::endl;
 	std::cout << "\033[34mConstructing\033[0m" << std::endl;
 	Dog *a = new Dog();
+	// Cat *a = new Cat();
 	a->setIdea(0, "I have to sniff it");
 	a->setIdea(1, "I have to pee on it");
 	a->setIdea(2, "I have to sniff it again");
 	Dog *b = new Dog(*a);
+	// Cat *b = new Cat(*a);
 	std::cout << std::endl;
 	std::cout << "\033[34mTesting a\033[0m" << std::endl;
 	std::cout << "The " << a->getType() << " a has the following ideas: " << std::endl;

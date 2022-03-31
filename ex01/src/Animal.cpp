@@ -6,12 +6,11 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 17:24:03 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/30 16:05:09 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 11:39:39 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
-#include <cstdio>
 
 // Constructors
 Animal::Animal():_type("default")

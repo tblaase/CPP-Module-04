@@ -6,12 +6,11 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 18:41:40 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/30 18:24:31 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 12:19:30 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "Cat.hpp"
-#include "../include/Cat.hpp"
+#include "Cat.hpp"
 
 // Constructors
 Cat::Cat(): Animal()
@@ -56,7 +55,7 @@ Cat &Cat::operator=(const Cat &src)
 // Public Methods
 void	Cat::makeSound(void)const
 {
-	std::cout << this->getType() << " says: **Woof**" << std::endl;
+	std::cout << this->getType() << " says: **Meeeoow**" << std::endl;
 }
 // Getter
 void	Cat::getIdeas(void)const
@@ -67,5 +66,6 @@ void	Cat::getIdeas(void)const
 // Setter
 void	Cat::setIdea(size_t i, std::string idea)
 {
-	this->_brain->setIdea(i, idea);
+	if (i < 100)
+		this->_brain->setIdea(i, idea);
 }

@@ -6,20 +6,20 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:04:51 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/30 10:33:50 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 11:35:51 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
 // Constructors
-Dog::Dog()
+Dog::Dog(): Animal()
 {
 	this->_type = "Dog";
 	std::cout << "Dog Default Constructor called" << std::endl;
 }
 
-Dog::Dog(const Dog &copy)
+Dog::Dog(const Dog &copy): Animal()
 {
 	std::cout << "Dog Copy Constructor called" << std::endl;
 	*this = copy;

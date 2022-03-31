@@ -6,20 +6,20 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 18:41:40 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/30 10:33:46 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 11:35:40 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
 // Constructors
-Cat::Cat()
+Cat::Cat(): Animal()
 {
 	this->_type = "Cat";
 	std::cout << "Cat Default Constructor called" << std::endl;
 }
 
-Cat::Cat(const Cat &copy)
+Cat::Cat(const Cat &copy): Animal()
 {
 	std::cout << "Cat Copy Constructor called" << std::endl;
 	*this = copy;

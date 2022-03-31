@@ -6,12 +6,11 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:04:51 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/30 18:23:26 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/03/31 11:45:12 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "Dog.hpp"
-#include "../include/Dog.hpp"
+#include "Dog.hpp"
 
 // Constructors
 Dog::Dog(): Animal()
@@ -67,5 +66,6 @@ void	Dog::getIdeas(void)const
 // Setter
 void	Dog::setIdea(size_t i, std::string idea)
 {
-	this->_brain->setIdea(i, idea);
+	if (i < 100)
+		this->_brain->setIdea(i, idea);
 }
