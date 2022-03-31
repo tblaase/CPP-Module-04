@@ -5,11 +5,10 @@ My solution for CPP Module 04 of the Common core of 42 school.
 ![result](https://github.com/tblaase/CPP-Module-04/blob/main/readme_additions/result.png)
 
 
-The Scope of this Modul was to get to know C++ further and come in contact with inheritance for classes:
-- ex00:
-- ex01:
-- ex02:
-- ex03:
+The Scope of this Modul was to get to know C++ further and come in closer contact with inheritance for classes:
+- ex00: Polymorphism
+- ex01: creation of deep copies of classes
+- ex02: introduction of the abstract class
 
 
 All of those exercises are compilable with the `-std=c++98-flag`, since this was a requirement for this project.<br>
