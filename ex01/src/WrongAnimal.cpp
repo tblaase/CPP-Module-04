@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:33:33 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/31 15:38:59 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/04/06 11:44:48 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,11 @@ void WrongAnimal::makeSound(void)const
 {
 	std::cout << this->getType() << " says: **WrongAnimal sounds**" << std::endl;
 }
+
 // Getter
 std::string	WrongAnimal::getType(void)const
 {
 	return (this->_type);
 }
+
 // Setter

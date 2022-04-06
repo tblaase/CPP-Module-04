@@ -6,7 +6,7 @@
 #    By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 17:06:07 by tblaase           #+#    #+#              #
-#    Updated: 2022/03/30 15:22:49 by tblaase          ###   ########.fr        #
+#    Updated: 2022/04/06 11:44:59 by tblaase          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME		=	watch_it_burn
 
 CC			=	c++
 
-CFLAGS		=	-Wall -Werror -Wextra -std=c++98 -g
+CFLAGS		=	-Wall -Werror -Wextra -std=c++98
 
 # directories
 SRC_DIR		=	src/

@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:59:07 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/31 13:51:37 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/04/06 11:45:53 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ const std::string *Brain::getIdeaAddress(size_t i)const
 	else
 		return (NULL);
 }
+
 // Setter
 void	Brain::setIdea(size_t i, std::string idea)
 {

@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:04:51 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/31 11:35:51 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/04/06 11:42:39 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ void	Dog::makeSound(void)const
 {
 	std::cout << this->getType() << " says: **Woof**" << std::endl;
 }
+
 // Getter
 
 // Setter

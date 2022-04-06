@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 10:38:12 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/31 15:40:43 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/04/06 11:42:51 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ void WrongCat::makeSound(void)const
 {
 	std::cout << this->getType() << " says: **WrongCat sounds**" << std::endl;
 }
+
 // Getter
 
 // Setter

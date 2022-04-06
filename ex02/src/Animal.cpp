@@ -6,7 +6,7 @@
 /*   By: tblaase <tblaase@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 17:24:03 by tblaase           #+#    #+#             */
-/*   Updated: 2022/03/31 15:44:19 by tblaase          ###   ########.fr       */
+/*   Updated: 2022/04/06 11:45:40 by tblaase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,11 @@ Animal &Animal::operator=(const Animal &src)
 void Animal::makeSound(void)const
 {
 }
+
 // Getter
 std::string	Animal::getType(void)const
 {
 	return (this->_type);
 }
+
 // Setter
